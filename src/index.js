@@ -1,5 +1,5 @@
 import React from 'react';
-// import { View } from 'react-native';
+import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -11,6 +11,11 @@ const Stack = createStackNavigator();
 
 export default function User() {
   return (
+    <>
+    <StatusBar
+      barStyle="light-content"
+      backgroundColor="#7159c1"
+    />
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Main"
@@ -26,5 +31,6 @@ export default function User() {
         />
       </Stack.Navigator>
     </NavigationContainer>
+    </>
   );
 }
