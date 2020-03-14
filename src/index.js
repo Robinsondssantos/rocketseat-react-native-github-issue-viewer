@@ -18,7 +18,7 @@ export default function User() {
     />
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Main"
+        <Stack.Screen name="Usuários"
           component={MainScreen}
           options={{
             headerTitleAlign: 'center',
