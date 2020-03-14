@@ -81,7 +81,6 @@ export default class Main extends Component {
   }
 
   render() {
-    const { navigator } = this.props;
     const { users, newUser, loading } = this.state;
 
     return (
