@@ -5,7 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 // import Routes from './Routes'
 
-import MainScreen from './pages/Main'
+import MainScreen from './pages/Main';
+import UserScreen from './pages/User';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,9 @@ export default function User() {
             },
             headerTintColor: '#ffffff'
           }}
+        />
+        <Stack.Screen name="User"
+          component={UserScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>
